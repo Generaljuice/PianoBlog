@@ -3,6 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+#bootsrap
+gem 'bootstrap', '~> 4.3.1'
+#sprockets
+gem 'sprockets-rails'
+#jquery for bootstrap
+gem 'jquery-rails'
+# Pooper js for posioning for bootsrap
+gem 'popper_js', '~> 1.14.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use sqlite3 as the database for Active Record
@@ -52,3 +60,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'devise'
