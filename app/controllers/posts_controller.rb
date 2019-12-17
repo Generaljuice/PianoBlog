@@ -3,8 +3,9 @@ class PostsController < ApplicationController
 
   # GET /posts
   # GET /posts.json
+  # Get a list of posts ordered by date descending
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
   end
 
   # GET /posts/1
