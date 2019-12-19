@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
   <head>
   </head>
   <body>
@@ -15,7 +14,10 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Piano Blog</h1>
+      <div class="navbar-brand">
+      <h1>  <%= "Piano Blog" %> </h1>
+      </div>
+
       <p class="lead text-muted"></p>
       <p>
         <%= link_to 'New Post', new_post_path, class:"btn btn-primary my-2"  %>

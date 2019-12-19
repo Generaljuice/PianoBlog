@@ -1,6 +1,6 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-
+@import "toastr";
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -26,4 +26,24 @@
 
 color: #aef !important;
 outline-color: #fff;
+}
+
+#notice_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(135, 216, 211 , 0.85);
+  p {
+    padding:1rem 0;
+    text-align: center;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+  }
+
+
+
 }
